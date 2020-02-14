@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:minWidth="600dp"
+    android:minHeight="800dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:text="Nom :"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:hint="Nom de la réunion"
+            android:textColor="#000000"
+            android:textColorHint="#AA9F9F"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Salle :"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/salle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:popupBackground="@color/colorPrimary"
+            android:prompt="@string/action_settings"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Participants :"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/participants"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:hint="Email des participants"
+            android:inputType="textEmailAddress"
+            android:textColor="#8D8A8E"
+            android:textColorHint="#AA9F9F"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Sujet :"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/sujet"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:hint="Sujet de la réunion"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#AA9F9F"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:text="Date :      "
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <NumberPicker
+            android:id="@+id/picker_day"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginStart="4dp"
+            android:theme="@style/AppTheme.Picker"></NumberPicker>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:text=" : "
+            android:textStyle="bold" />
+
+        <NumberPicker
+            android:id="@+id/picker_month"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:theme="@style/AppTheme.Picker"></NumberPicker>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:text=" : "
+            android:textStyle="bold" />
+
+        <NumberPicker
+            android:id="@+id/picker_year"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:theme="@style/AppTheme.Picker"></NumberPicker>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:text="Horaire : "
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <NumberPicker
+            android:id="@+id/picker_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginTop="2dp"
+            android:theme="@style/AppTheme.Picker"></NumberPicker>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:text=" : "
+            android:textStyle="bold" />
+
+        <NumberPicker
+            android:id="@+id/picker_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginTop="2dp"
+            android:theme="@style/AppTheme.Picker"></NumberPicker>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/newMeeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dip"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimary"
+            android:imeOptions="actionDone"
+            android:text="valider" />
+    </LinearLayout>
+
+</LinearLayout>
